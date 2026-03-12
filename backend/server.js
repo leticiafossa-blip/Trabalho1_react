@@ -1,18 +1,19 @@
 const express = require('express')
+const cors = require('cors')
+const hospedesRoutes = require('./routes/clientes.routes')
+
 const app = express()
 const PORT = 3000
 
-const userRoutes = require('./routes/user.routes')
- console.log("Mateus o melhor do mundo")
+app.use(cors())
 app.use(express.json())
 
-app.use('/usuarios', userRoutes)
-
-app.listen(PORT, () => {
-    console.log(`Servidor rodando em htttp://localhost:${PORT}`)
-})
+app.use('/', hospedesRoutes)
 
 app.get('/', (req, res) => {
-    console.log('Você acessou a página inicial')
-    res.json('Você acessou a página inicial')
+    res.send(`Servidor rodando em http://localhost:${PORT}`)
+})
+
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em http://localhost:${PORT}`)
 })
