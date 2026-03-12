@@ -3,7 +3,7 @@ const app = express()
 const PORT = 3000
 
 const userRoutes = require('./routes/user.routes')
-
+ console.log("Mateus o melhor do mundo")
 app.use(express.json())
 
 app.use('/usuarios', userRoutes)
