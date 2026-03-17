@@ -35,7 +35,9 @@ router.post('/cadastrar_hospedes', (req, res) => {
         sobrenome: req.body.sobrenome,
         dataNascimento: req.body.dataNascimento,
         cpf: req.body.cpf,
-        numeroQuarto: req.body.numeroQuarto
+        numeroQuarto: req.body.numeroQuarto,
+        dataInicio: req.body.dataInicio,
+        dataFim: req.body.dataFim
     }
 
     hospedes.push(novoHospede)

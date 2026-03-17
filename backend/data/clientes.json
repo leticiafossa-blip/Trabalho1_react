@@ -5,6 +5,8 @@
     "sobrenome": "Fossa",
     "dataNascimento": "2000-05-10",
     "cpf": "12345678900",
-    "numeroQuarto": 205
+    "numeroQuarto": 205,
+    "dataInicio": "2025-03-16",
+    "dataFim": "2025-03-17"
   }
 ]
