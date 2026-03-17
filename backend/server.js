@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express')
 const cors = require('cors')
 const hospedesRoutes = require('./routes/clientes.routes')
@@ -17,3 +18,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`)
 })
+=======
+function teste (){
+    return true;
+};
+>>>>>>> 376ef00fb7dae7ee9d6d4c91b9b0424acb577bd4
